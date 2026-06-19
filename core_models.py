@@ -465,36 +465,48 @@ def suggest_half_life_adjustment(mse_history: list[dict]) -> dict:
     Analiza errores recientes por modelo y sugiere ajustes de HALF_LIFE
     o redistribución de pesos del ensamble.
     """
-    if len(mse_history) < 3:
-        return {"sugerencia": "Insuficientes partidos cerrados para ajuste automático."}
+    if len(mse_history) < 1:
+        return {"sugerencia": "Cierra al menos un partido para activar el ajuste automático."}
 
     recent = mse_history[-10:]
-    errors_dc   = [r.get("mse_dc",   np.nan) for r in recent]
-    errors_xgb  = [r.get("mse_xgb",  np.nan) for r in recent]
-    errors_mcmc = [r.get("mse_mcmc", np.nan) for r in recent]
 
     def safe_mean(lst):
-        vals = [v for v in lst if not np.isnan(v)]
-        return np.mean(vals) if vals else np.nan
+        vals = [v for v in lst if v is not None and not np.isnan(float(v))]
+        return float(np.mean(vals)) if vals else np.nan
+
+    errors_dc   = [r.get("mse_dc")   for r in recent]
+    errors_xgb  = [r.get("mse_xgb")  for r in recent]
+    errors_mcmc = [r.get("mse_mcmc") for r in recent]
+    avg_mse     = safe_mean([r.get("model_error") for r in recent])
 
     means = {
         "DC":   safe_mean(errors_dc),
         "XGB":  safe_mean(errors_xgb),
         "MCMC": safe_mean(errors_mcmc),
     }
-    best = min(means, key=lambda k: means[k] if not np.isnan(means[k]) else np.inf)
 
-    avg_mse = safe_mean([r.get("mse_ensemble", np.nan) for r in recent])
-    hl_suggestion = "mantener"
+    # Si no hay desglose por modelo, usamos ensamble como referencia
+    valid_means = {k: v for k, v in means.items() if not np.isnan(v)}
+    if valid_means:
+        best = min(valid_means, key=lambda k: valid_means[k])
+        sugerencia_pesos = f"Incrementar peso de '{best}' en el ensamble."
+    else:
+        best = "ensamble"
+        sugerencia_pesos = "Acumula más partidos cerrados para comparar modelos."
+
+    hl_suggestion = "mantener HALF_LIFE actual"
     if not np.isnan(avg_mse):
         if avg_mse > 2.0:
             hl_suggestion = "reducir HALF_LIFE (dar más peso a datos recientes)"
         elif avg_mse < 0.5:
             hl_suggestion = "aumentar HALF_LIFE (los datos históricos son estables)"
 
+    n = len(recent)
     return {
-        "mse_por_modelo": {k: round(v, 3) if not np.isnan(v) else None for k, v in means.items()},
+        "partidos_analizados": n,
+        "mse_ensamble_promedio": round(avg_mse, 4) if not np.isnan(avg_mse) else None,
+        "mse_por_modelo": {k: round(v, 3) if not np.isnan(v) else "sin datos" for k, v in means.items()},
         "modelo_más_preciso": best,
         "half_life": hl_suggestion,
-        "sugerencia_pesos": f"Incrementar peso de '{best}' en el ensamble.",
+        "sugerencia_pesos": sugerencia_pesos,
     }
