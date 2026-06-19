@@ -15,7 +15,7 @@ import streamlit as st
 
 # ─── Configuración de página ──────────────────────────────────────────────────
 st.set_page_config(
-    page_title="PREDICATHOR 3.5 — FootAgent",
+    page_title="PREDICATHOR 3.5 — FootAgent by PICHOINDUSTRIES",
     page_icon="⚽",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -97,9 +97,12 @@ def _export_prediction_png(matrix: np.ndarray, home: str, away: str,
     ax_title = fig.add_subplot(gs[0, :])
     ax_title.axis("off")
     ax_title.set_facecolor("#0e1117")
-    ax_title.text(0.5, 0.75, f"PREDICATHOR 3.5  —  {home} vs {away}",
+    ax_title.text(0.5, 0.80, f"PREDICATHOR 3.5  —  {home} vs {away}",
                   ha="center", va="center", fontsize=16, fontweight="bold",
                   color="white", transform=ax_title.transAxes)
+    ax_title.text(0.5, 0.42, "P I C H O I N D U S T R I E S",
+                  ha="center", va="center", fontsize=9, fontweight="bold",
+                  color="#f0a500", transform=ax_title.transAxes)
     metrics = (
         f"Victoria {home}: {outcomes['p_home']*100:.1f}%     "
         f"Empate: {outcomes['p_draw']*100:.1f}%     "
@@ -218,6 +221,12 @@ def _render_top10(top10: list[dict], home: str, away: str):
 with st.sidebar:
     st.title("⚽ PREDICATHOR 3.5")
     st.caption("FootAgent — Predicción Bayesiana de Fútbol Internacional")
+    st.markdown(
+        "<div style='text-align:center; color:#f0a500; font-size:13px; "
+        "font-weight:bold; letter-spacing:2px; margin-top:-8px;'>"
+        "PICHOINDUSTRIES</div>",
+        unsafe_allow_html=True,
+    )
     st.divider()
 
     # API Key (opcional)
