@@ -1,0 +1,565 @@
+{
+  "predictions": [
+    {
+      "id": "Mexico_vs_Czech_Republic_20260619015224",
+      "fecha": "2026-06-24",
+      "local": "Mexico",
+      "visitante": "Czech Republic",
+      "pred_l": 0.93,
+      "pred_a": 0.68,
+      "outcomes": {
+        "p_home": 0.331285309637692,
+        "p_draw": 0.474851525049637,
+        "p_away": 0.19386316531267106
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.3672466273202797
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.13508532324000522
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.07869924926815088
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Mexico_vs_North_Korea_20260619015326",
+      "fecha": "2026-06-19",
+      "local": "Mexico",
+      "visitante": "North Korea",
+      "pred_l": 1.09,
+      "pred_a": 0.55,
+      "outcomes": {
+        "p_home": 0.4185904984440143,
+        "p_draw": 0.4357863531379443,
+        "p_away": 0.14562314841804144
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.3205486820069365
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.15922956041171096
+        },
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.09558526125852172
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Brazil_vs_Morocco_20260619021444",
+      "fecha": "2026-06-13",
+      "local": "Brazil",
+      "visitante": "Morocco",
+      "pred_l": 1.25,
+      "pred_a": 1.05,
+      "outcomes": {
+        "p_home": 0.3434570234316084,
+        "p_draw": 0.40617453583909385,
+        "p_away": 0.2503684407292978
+      },
+      "top3": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.1818893169756573
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.17768576708144979
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.07435019175880687
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Mexico_vs_South_Korea_20260619021608",
+      "fecha": "2026-06-24",
+      "local": "Mexico",
+      "visitante": "South Korea",
+      "pred_l": 1.6,
+      "pred_a": 1.52,
+      "outcomes": {
+        "p_home": 0.3617422570518303,
+        "p_draw": 0.3137938435866405,
+        "p_away": 0.3244638993615293
+      },
+      "top3": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.14529543542682066
+        },
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.09092760489186098
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "prob": 0.07807151387719581
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "United_States_vs_Australia_20260619022019",
+      "fecha": "2026-06-19",
+      "local": "United States",
+      "visitante": "Australia",
+      "pred_l": 1.48,
+      "pred_a": 1.49,
+      "outcomes": {
+        "p_home": 0.37292641746205757,
+        "p_draw": 0.2403687411758289,
+        "p_away": 0.3867048413621136
+      },
+      "top3": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.10963035631755676
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.08030152885183138
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.07941959481300556
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "United_States_vs_Australia_20260619023501",
+      "fecha": "2026-06-19",
+      "local": "United States",
+      "visitante": "Australia",
+      "pred_l": 1.48,
+      "pred_a": 1.49,
+      "outcomes": {
+        "p_home": 0.37292641746205757,
+        "p_draw": 0.2403687411758289,
+        "p_away": 0.3867048413621136
+      },
+      "top3": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.10963035631755676
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.08030152885183138
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.07941959481300556
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Scotland_vs_Morocco_20260619023728",
+      "fecha": "2026-06-19",
+      "local": "Scotland",
+      "visitante": "Morocco",
+      "pred_l": 0.73,
+      "pred_a": 0.8,
+      "outcomes": {
+        "p_home": 0.21673740706306044,
+        "p_draw": 0.4998052422615683,
+        "p_away": 0.2834573506753713
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.4047400384190101
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.1264446874354463
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.0722007342901693
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Scotland_vs_Morocco_20260619023734",
+      "fecha": "2026-06-19",
+      "local": "Scotland",
+      "visitante": "Morocco",
+      "pred_l": 0.74,
+      "pred_a": 0.8,
+      "outcomes": {
+        "p_home": 0.21758297761101553,
+        "p_draw": 0.49844538591012755,
+        "p_away": 0.2839716364788569
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.4035891426550881
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.12664518790785212
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.07213749107551057
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Brazil_vs_Haiti_20260619024436",
+      "fecha": "2026-06-19",
+      "local": "Brazil",
+      "visitante": "Haiti",
+      "pred_l": 1.62,
+      "pred_a": 0.95,
+      "outcomes": {
+        "p_home": 0.45202268204116103,
+        "p_draw": 0.371578883750687,
+        "p_away": 0.17639843420815188
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.2707999835328982
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1466951579562897
+        },
+        {
+          "home": 2,
+          "away": 0,
+          "prob": 0.05826521179258345
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Turkey_vs_Paraguay_20260619024533",
+      "fecha": "2026-06-19",
+      "local": "Turkey",
+      "visitante": "Paraguay",
+      "pred_l": 0.98,
+      "pred_a": 0.59,
+      "outcomes": {
+        "p_home": 0.37717298874451044,
+        "p_draw": 0.4366279051906885,
+        "p_away": 0.18619910606480103
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.35949814434240246
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.1515720883234786
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.09502523003266491
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Germany_vs_Curaçao_20260619024743",
+      "fecha": "2026-06-14",
+      "local": "Germany",
+      "visitante": "Curaçao",
+      "pred_l": 4.25,
+      "pred_a": 1.05,
+      "outcomes": {
+        "p_home": 0.8783974601004605,
+        "p_draw": 0.07735249415853444,
+        "p_away": 0.04425004574100516
+      },
+      "top3": [
+        {
+          "home": 4,
+          "away": 0,
+          "prob": 0.07049748682917316
+        },
+        {
+          "home": 4,
+          "away": 1,
+          "prob": 0.0675134486150044
+        },
+        {
+          "home": 5,
+          "away": 0,
+          "prob": 0.06401004809351084
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Mexico_vs_North_Korea_20260619024835",
+      "fecha": "2026-06-19",
+      "local": "Mexico",
+      "visitante": "North Korea",
+      "pred_l": 0.99,
+      "pred_a": 0.56,
+      "outcomes": {
+        "p_home": 0.3685672113229481,
+        "p_draw": 0.4656433115210655,
+        "p_away": 0.1657894771559864
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.36375916858190627
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.13345471710038398
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0856114795010616
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "United_States_vs_Australia_20260619031741",
+      "fecha": "2026-06-19",
+      "local": "United States",
+      "visitante": "Australia",
+      "pred_l": 1.48,
+      "pred_a": 1.49,
+      "outcomes": {
+        "p_home": 0.37292641746205757,
+        "p_draw": 0.2403687411758289,
+        "p_away": 0.3867048413621136
+      },
+      "top3": [
+        {
+          "home": 1,
+          "away": 1,
+          "prob": 0.10963035631755676
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.08030152885183138
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "prob": 0.07941959481300556
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Spain_vs_Cape_Verde_20260619032628",
+      "fecha": "2026-06-15",
+      "local": "Spain",
+      "visitante": "Cape Verde",
+      "pred_l": 0.76,
+      "pred_a": 0.41,
+      "outcomes": {
+        "p_home": 0.3224199689661989,
+        "p_draw": 0.5475267639342705,
+        "p_away": 0.13005326709953066
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.47505109537569506
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.138860330406087
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.0650539446324952
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    },
+    {
+      "id": "Mexico_vs_Portugal_20260619032758",
+      "fecha": "2026-06-19",
+      "local": "Mexico",
+      "visitante": "Portugal",
+      "pred_l": 0.66,
+      "pred_a": 0.62,
+      "outcomes": {
+        "p_home": 0.22004004940525104,
+        "p_draw": 0.5608372721716814,
+        "p_away": 0.21912267842306743
+      },
+      "top3": [
+        {
+          "home": 0,
+          "away": 0,
+          "prob": 0.4682149022756786
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "prob": 0.1035091803072309
+        },
+        {
+          "home": 1,
+          "away": 0,
+          "prob": 0.07908212634939309
+        }
+      ],
+      "estado": "pendiente",
+      "mse_ensemble": null,
+      "mse_dc": null,
+      "mse_xgb": null,
+      "mse_mcmc": null,
+      "goles_l_real": null,
+      "goles_a_real": null
+    }
+  ],
+  "performance": [],
+  "meta": {
+    "version": "1.0",
+    "created": "2026-06-19",
+    "description": "Base de conocimientos comprimida de FootAgent PREDICATHOR 3.5"
+  }
+}

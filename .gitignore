@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+.streamlit/secrets.toml
+launch_predicathor.bat
